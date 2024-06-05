@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".health_report">
+
+    <ImageButton
+        android:id="@+id/hometoplogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:contentDescription=" "
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topleftlogo" />
+
+    <ImageView
+        android:id="@+id/userimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usertopright" />
+
+    <TextView
+        android:id="@+id/healthreporttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Health Report"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hometoplogo" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthreporttext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/namelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Name: John Doe"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/agelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Age: 49"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/heightlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Height: 188.2cm"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/bmilabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="BMI: 28"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/allergieslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Allergies: None"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/bloodpressurelabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Blood Pressure: 131/82 mmHg"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/lslcholesterollabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="LDL Cholesterol: 122 mg/dL"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/chronicillnesslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Chronic Illness(es): Type 2 Diabetes"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/dietlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Diet: Low-Carbohydrate Diet"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/exerciselabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Exercise: Frequent Jogging"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/doctorsnotelabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Doctor's Note:"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/doctorsnotefull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="I'm glad to see you're taking proactive steps towards managing your type 2 diabetes. Your commitment to a low-carb diet, insulin therapy, and regular exercise is commendable. Remember, managing type 2 diabetes is a journey, and it's normal to face challenges along the way.
+
+                Take care, Dr. Ligma"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
